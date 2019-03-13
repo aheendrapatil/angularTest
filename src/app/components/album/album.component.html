@@ -1,0 +1,9 @@
+<h1>ALbum</h1>
+<div >
+<ul class="heroes">
+    <li  *ngFor="let album of albums" (click)="getPhotoDetails(album)">            
+            <span class="badge">{{album.id}}</span> {{album.title}}
+            </li>    
+</ul>  
+<button (click)="backClicked()">Back </button> 
+</div>

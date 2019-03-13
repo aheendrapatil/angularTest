@@ -1,0 +1,14 @@
+<h1>Photo</h1>
+<div >
+<ul class="heroes">
+    <li  *ngFor="let photo of photos" >            
+            <span class="badge">{{photo.id}}</span> {{photo.title}}
+            <figure>
+ <img src="photo.thumbnailUrl"
+   alt="flying Angular hero"
+   width="200">
+</figure>
+            </li>    
+</ul>  
+<button (click)="backClicked()">Back </button>
+</div>
